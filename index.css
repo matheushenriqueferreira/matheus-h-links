@@ -28,13 +28,13 @@ img.avatar {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    opacity: 0.9;
     padding: 3.7px;
+    filter: brightness(90%);
     border: #413F42 solid 4px;
-    transition: opacity 400ms;
+    transition: filter 400ms;
 }
 img.avatar:hover {
-    opacity: 1;
+    filter: brightness(100%)
 }
 
 .name {
@@ -54,7 +54,7 @@ ul {
     margin: 48px 0;
 }
 
-ul li a {
+.indexIcons {
     width: 100%;
     height: 53px;
     display: flex;
@@ -62,20 +62,29 @@ ul li a {
     align-items: center;
     background: #413F42;
     color: white;
-    font-size: 14px;
+    font-size: 35px;
     margin-bottom: 16px;
     border-radius: 6px;
-    opacity: 0.8;
-    transition: opacity 400ms;
 }
 
-ul li a:hover {
-    opacity: 1;
+.fa-github {
+    transition: color 400ms;
 }
-
-ul li a img {
-    width: 30px;
-    height: 30px;
+.fa-github:hover {
+    color: #b0b0b0;
+    color-interpolation-filters: linearRGB;
+}
+.fa-instagram {
+    transition: color 400ms;
+}
+.fa-instagram:hover {
+    color:#c32aa3;
+}
+.fa-facebook {
+    transition: color 400ms;
+}
+.fa-facebook:hover {
+    color: #1877f2;
 }
 
 .indexFooter {
