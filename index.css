@@ -84,11 +84,8 @@ img.avatar:hover {
     margin-top: 24px;
     margin-bottom: 8px;
 }
-.userName {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
-    opacity: 0.8;
+.userDescription {
+    font-size: 20px;
 }
 
 ul {
