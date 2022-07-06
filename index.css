@@ -16,7 +16,7 @@ fieldset {
 }
 
 input {
-    all: unset;
+    display: none;
 }
 
 html {
