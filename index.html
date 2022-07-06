@@ -15,13 +15,37 @@
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>        
         <link rel="stylesheet" type="text/css" href="index.css"/>
+
+        <script src="./index.js" type=""></script>
     </head>
     <body class="darkGray">
         <div class="content">
+            <header class="indexHeader">
+                <fieldset>
+                    <div id="inputColor">
+                        <label class="labelColor">
+                            <input type="radio" name="inputColor" id="inputDarkGray" value="darkGray" checked>
+                            <span id="darkGray"></span>
+                        </label>
+                        <label class="labelColor">
+                            <input type="radio" name="inputColor" id="inputLightGray" value="lightGray">
+                            <span id="lightGray"></span>
+                        </label>
+                        <label class="labelColor">
+                            <input type="radio" name="inputColor" id="inputDarkBlue" value="darkBlue">
+                            <span id="darkBlue"></span>
+                        </label>
+                        <label class="labelColor">
+                            <input type="radio" name="inputColor" id="inputLightBlue" value="lightBlue">
+                            <span id="lightBlue"></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </header>
             <img class="avatar" src="https://github.com/MatheusHenriqueFerreira.png" alt="Uma foto do Matheus Henrique Ferreira" />
             <h1 class="name">Matheus Henrique Ferreira</h1>
             <p class="userName">@matheushenriqueferreira</p>
-            <ul>
+            <ul class="listLink">
                 <li>
                     <a href="https://github.com/MatheusHenriqueFerreira" target="_blank">
                         <i class="fa-brands fa-github indexIcons"></i>

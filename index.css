@@ -9,17 +9,21 @@ a {
     color: #ffffff;
 }
 
+fieldset {
+    border-radius: 5px;
+    border: var(--primary-color) 1px solid;
+    padding: 20px;
+}
+
+input[type=radio] {
+    all: unset;
+}
+
 html {
     /*variáveis*/
     --bg-color: #ffffff;
     --text-color: #000000;
     --primary-color: #413F42; 
-}
-
-body.lightGray {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #413F42;     
 }
 
 body.darkGray {
@@ -28,10 +32,22 @@ body.darkGray {
     --primary-color: #413F42;
 }
 
+body.lightGray {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #413F42;     
+}
+
 body.darkBlue {
     --bg-color: #000000;
     --text-color: #ffffff;
     --primary-color: #040070;
+}
+
+body.lightBlue {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #040070;     
 }
 
 body {
@@ -77,6 +93,9 @@ img.avatar:hover {
 
 ul {
     list-style: none;
+}
+
+.listLink {
     margin: 48px 0;
 }
 
@@ -111,3 +130,42 @@ ul {
 .fa-facebook:hover {
     color: #1877f2;
 }
+
+.indexHeader {
+    margin-bottom: 30px;
+}
+
+header fieldset div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.labelColor input[type=radio] + span{
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.labelColor input[type=radio]:checked + span{
+    padding: 4px 14px 4px 14px;
+    border: var(--text-color) 3px solid;
+}
+
+#lightGray {
+    background-image: linear-gradient(80deg, #413F42, #ffffff, #413F42);    
+}
+
+#darkGray {
+    background-image: linear-gradient(80deg, #413F42, #000000, #413F42);
+}
+
+#darkBlue {
+    background-image: linear-gradient(80deg, #040070, #000000, #040070);
+}
+
+#lightBlue {
+    background-image: linear-gradient(80deg, #040070, #ffffff, #040070);
+}
+
