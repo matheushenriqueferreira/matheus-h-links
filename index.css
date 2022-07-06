@@ -6,11 +6,37 @@
 
 a {
     text-decoration: none;
+    color: #ffffff;
+}
+
+html {
+    /*variáveis*/
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #413F42; 
+}
+
+body.lightGray {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #413F42;     
+}
+
+body.darkGray {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #413F42;
+}
+
+body.darkBlue {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #040070;
 }
 
 body {
-    background: black;
-    color: white;
+    background: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,7 +56,7 @@ img.avatar {
     height: 100px;
     padding: 3.7px;
     filter: brightness(90%);
-    border: #413F42 solid 4px;
+    border: var(--primary-color) solid 4px;
     transition: filter 400ms;
 }
 img.avatar:hover {
@@ -60,8 +86,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #413F42;
-    color: white;
+    background: var(--primary-color);
     font-size: 35px;
     margin-bottom: 16px;
     border-radius: 6px;
@@ -71,7 +96,7 @@ ul {
     transition: color 400ms;
 }
 .fa-github:hover {
-    color: #b0b0b0;
+    color: #969696;
     color-interpolation-filters: linearRGB;
 }
 .fa-instagram {
@@ -85,32 +110,4 @@ ul {
 }
 .fa-facebook:hover {
     color: #1877f2;
-}
-
-.indexFooter {
-    border: solid #413F42 1px;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-.indexFooter span {
-    font-size: 14px;
-    opacity: 0.6;
-}
-
-.linkFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.linkFooter a {
-    font-size: 14px;
-    color: white;
-    transition: opacity 400ms;
-    opacity: 0.4;
-}
-.linkFooter a:hover {
-    opacity: 0.9;
 }
