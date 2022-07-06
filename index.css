@@ -15,7 +15,7 @@ fieldset {
     padding: 20px;
 }
 
-input[type=radio] {
+input {
     all: unset;
 }
 
